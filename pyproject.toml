@@ -1,0 +1,20 @@
+[project]
+name = "angry-birds"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aldevan", email = "aldevan.alt@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pygame-ce>=2.5.8",
+    "pymunk>=7.3.0",
+]
+
+[project.scripts]
+angry-birds = "angry_birds:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
